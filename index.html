@@ -14,7 +14,7 @@ body{
     background:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1600') center/cover fixed;
 }
 .overlay{
-    min-height:100vh;
+    min-height:100dvh;
     background:rgba(0,0,0,.82);
 }
 header{
@@ -59,7 +59,9 @@ h2{
     padding:20px;
     margin-top:20px;
     border-radius:8px;
-    line-height:1.8;
+    max-width:900px;
+    margin-top:20px;
+    font-size:18px;
     white-space:pre-line;
 }
 button{
@@ -72,6 +74,8 @@ button{
     cursor:pointer;
     font-family:Verdana,sans-serif;
     font-weight:bold;
+    min-height:50px;
+    touch-action:manipulation;
 }
 button:hover{
     background:#333;
@@ -85,6 +89,48 @@ button:hover{
     height:100%;
     background:#FFE81F;
     width:0%;
+}
+
+
+@media (max-width: 768px){
+
+    h1{
+        font-size:32px;
+        letter-spacing:2px;
+    }
+
+    h2{
+        font-size:16px;
+    }
+
+    .panel{
+        padding:10px;
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .card{
+        text-align:center;
+        font-size:14px;
+        padding:12px;
+    }
+
+    #story{
+        font-size:16px;
+        line-height:1.7;
+        padding:15px;
+    }
+
+    button{
+        font-size:16px;
+        padding:16px;
+    }
+
+    .bar{
+        height:16px;
+    }
 }
 </style>
 
